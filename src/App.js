@@ -27,6 +27,10 @@ class App extends Component {
           <button
             onClick={() => {
               console.log("ouch!");
+              const aNewDate = new Date();
+              this.setState({
+                dates: [...this.state.dates, aNewDate.toLocaleString()]
+              });
             }}
             className="my-button"
           >
