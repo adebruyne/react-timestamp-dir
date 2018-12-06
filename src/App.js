@@ -22,9 +22,16 @@ class App extends Component {
     return (
       <div className="App">
         <div className="main-component">
-          <button className="my-button">go ahead, click me. i dare you</button>
+          <button
+            onClick={() => {
+              console.log("ouch!");
+            }}
+            className="my-button"
+          >
+            go ahead, click me. i dare you
+          </button>
 
-          <DateList dates={dateAsListItems} />
+          <DateList listOfDates={dateAsListItems} />
         </div>
       </div>
     );
