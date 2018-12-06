@@ -4,4 +4,5 @@
 
 #1 Timestamp button
 Show the user a button
+<br/>
 When they click, add the current timestamp to an unordered list
